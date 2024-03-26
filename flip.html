@@ -1,13 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="flip.css">
-</head>
-<body>
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Flipkart Clone | Nitin Roshan</title>
+     <link rel="stylesheet" href="flip.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+ <body>
+     <div id="navbar">
+          <div id="logo">
+             <img src="flip_logo.svg" alt="Flipkart-Logo">
+          </div>
+          
+          <span class="searchbar">
+             <i class="fa-solid fa-magnifying-glass"></i>
+             <input type="text" placeholder="Search for Product, Brands and More">
+           </span>
+
+          <div class="user">
+             <i class="fa-regular fa-user"></i>
+             Login
+             <select class="opt">
+                 <option disabled selected hidden>New Custumber?</option>
+                 <i class="fa-regular fa-user"><option>My Profile</option></i>
+                 <option>Flipkart Plus Zone</option>
+                 <option>Orders</option>
+                 <option>Wishlist</option>
+                 <option>Rewards</option>
+                 <option>Gift Cards</option>
+             </select>
+          </div>
+
+          <div class="cart">
+             <i class="fa-solid fa-cart-shopping"></i>
+             Cart
+          </div>
+          <div class="seller">
+             <i class="fa-solid fa-store"></i>
+             Become a Seller
+          </div>
+
+          <div class="icon-container">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+               <div class="dropdown">
+                 <!-- Dropdown content -->
+                 <span><i class="fa-regular fa-bell"></i><a href="#">Notification Preferences</a></span>
+                 <i class="fa-solid fa-headphones-simple"></i><a href="#">24x7 Custumber Care</a>
+                 <i class="fa-solid fa-arrow-trend-up"></i><a href="#">Advertise</a>
+                 <i class="fa-solid fa-download"></i><a href="#">Download App</a>
+               </div>
+          </div>
+      </div>
+
+      <div class="category">
+         <div class="grocery"><pre>
+            <img src="surfex.webp">
+             Grocery</pre>
+         </div>
+         <div class="mobiles"><pre>
+            <img src="mobile.webp">
+             Mobiles</pre>
+         </div>
+         <div class="fashion">
+            <img src="fashion.webp">
+            <p>Fashion <i class="fa-solid fa-angle-down"></i></p>
+            <div class="fash-opt">
+               
+             <a href="#">Men's Top Wear</a>
+             <a href="#">Men's Top Wear</a>
+             <a href="#">Men Bottom Wear</a>
+             <a href="#">Women Ethnic</a>
+             <a href="#">Women Western</a>
+             <a href="#">Men footwear </a>
+             <a href="#">Women Footwear</a>
+             <a href="#">Watches and Accessories</a>
+             <a href="#">Bags, Suitcase & Lugguage</a>
+             <a href="#">Kids</a>
+             <a href="#">Essential</a>
+             <a href="#">Winter</a>
+           </div>
+         </div>
+         
+         <div class="electronics">
+            <img src="electronic.webp">
+            <p>Electronics <i class="fa-solid fa-angle-down"></i></p>
+            <div class="elect-opt">
+             <a href="#">Audio</a>
+             
+             <a href="#">Electronics GST store</a>
+             <a href="#">Camera and Accessories</a>
+             <a href="#">Computer Peripherals</a>
+             <a href="#">Gaming</a>
+             <a href="#">Health & Personal care</a>
+             <a href="#">Laptop and desktop</a>
+             <a href="#">Mobile Accessory</a>
+             <a href="#">Powerbank</a>
+             <a href="#">Smart Home Automation</a>
+             <a href="#">Smart Wearables</a>
+             <a href="#">Storage</a>
+           </div>
+         </div>
+
+         <div class="furniture">
+            <img src="furniture.webp">
+            <p>Home & Furniture <i class="fa-solid fa-angle-down"></i></p>
+            <div class="furni-opt">
+             <a href="#">Home Furnishings</a>
+             <a href="#">Furniture Studio</a>
+             <a href="#">Living Room Furniture</a>
+             <a href="#">Kitchen & Dinning</a>
+             <a href="#">Bedroom Furniture</a>
+             <a href="#">Space Saving Furniture</a>
+             <a href="#">Home Decor</a>
+             <a href="#">Tool & Utility</a>
+             <a href="#">Work Space Furniture</a>
+             <a href="#">Kids Furniture</a>
+             <a href="#">Lightings & Electricals</a>
+             <a href="#">Cleaning & Bath</a>
+             <a href="#">Pet & Gardening</a>
+           </div>
+         </div>
+
+         <div class="appliances"><pre>
+            <img src="appliances.webp">
+            Appliances</pre>
+         </div>
+         <div class="travel"><pre>
+            <img src="travel.webp">
+             Travel</pre>
+         </div>
+         <div class="toys">
+            <img src="toy.webp">
+            <p>Beautys, Toys & More <i class="fa-solid fa-angle-down"></i></p>
+            <div class="toy-opt">
+             <a href="#">Beauty & Personal Care</a>
+             <a href="#">Men's Grooming</a>
+             <a href="#">Food & Drinks </a>
+             <a href="#">Nutrition & Health Care</a>
+             <a href="#">Baby Care</a>
+             <a href="#">Toys & School Supplies</a>
+             <a href="#">Sports & Fitness</a>
+             <a href="#">Books</a>
+             <a href="#">Music</a>
+             <a href="#">Stationery & Office</a>
+             <a href="#">Auto Accessories</a>
+             <a href="#">Safety & Hygiene Essentials</a>
+           </div>
+         </div>
+         <div class="wheelers">
+            <img src="2wheeler.webp">
+            <p>Two Wheelers <i class="fa-solid fa-angle-down"></i></p>
+            <div class="wheel-opt">
+             <a href="#">Petrol Vehicles</a>
+             <a href="#">Electric Vehichles</a>
+            </div>
+         </div>
+      </div>
+      <div class="slider-container">
+         <div class="slider">
+          <img src="slide1.webp">
+          <img src="slide 2.webp">
+          <img src="slide3.webp">
+          <img src="slide4.webp"> 
+       
+       
+          <span class="bullet active"></span>
+          <span class="bullet"></span>
+          <span class="bullet"></span>
+          <span class="bullet"></span>
+         </div>
+      </div>
+      <section>
+         <span id="head1"><b>Best of Electronics</b> <i class="fa-solid fa-greater-than"></i></span>
+         <br>
+       <div class="content1">
+         
+           <div class="cont1">
+            <a href="#"> <img src="camera.png"></a>
+             <p>Printers</p>
+             <b>Shop Now!</b>
+           </div>
+
+           <div class="cont1">
+            <a href="#"><img src="printer.png"></a>
+              <p>Printers</p>
+             <b>From 3999</b>
+            </div>
+
+           <div class="cont1">
+            <a href="#"><img src="keyboard.png"></a>
+               <p>Top Selling Dell Keyboard</p>
+               <b>From 229</b>
+           </div>
+
+       
+           <div class="cont1">
+            <a href="#"><img src="powerbank.png"></a>
+              <p>Printers</p>
+             <b>From 3999</b>
+           </div>
+
+           <div class="cont1">
+             <a href="#"><img src="shaver.png"></a>
+             <p>Best Of shaver</p>
+             <b>From 1649</b>
+           </div>
+
+           <div class="cont1">
+            <a href="#"><img src="monitor.png"></a>
+             <p>ASUS Monitors</p>
+              <b>14999</b>
+           </div>
+       
+           <span class="ads">
+            <a href="#"><img src="ads.png"></a>
+              </span>
+       </div> 
+    </section>
+
+        
+    <section>
+       <span>
+         <b class="head2" >Beauty, Food, Toys & more</b> <i class="fa-solid fa-greater-than"></i></span>
+        
+         <br>
+       <div class="content2">
+         
+           <div class="cont"> 
+             <a href="#"><img src="rctoy.png"></a>
+             <p>Remote Control Toys</p>
+             <b>Up to 80% Off</b>
+          </div>
+
+           <div class="cont">
+             <a href="#"><img src="gym.png"></a>
+             <p>Gym Essential</p>
+             <b>From 139</b>
+           </div>
+       
+          <div class="cont">
+             <a href="#"><img src="microphones.png"></a>
+             <p>Microphones</p>
+             <b>Up to 70% Off</b>
+           </div>
+
+           <div class="cont">
+              <img src="stationery.png">
+              <p>Stationery</p>
+              <b>Up to 70% Off</b>
+           </div>
+
+          <div class="cont">
+             <a href="#"><img src="cycle.png"></a>
+             <p>Geared Cycle </p>
+             <b>Up to 70% Off</b>
+           </div>
+
+          <div class="cont">
+             <a href="#"><img src="dryf.png"></a>
+             <p>Dry Fruits</p>
+             <b>From 399</b>
+           </div>
+       </div>
+    </section>
+
+      <content>
+        <section>
+          <p class="head3">Shop for Your Love</p>
+            <br> 
+           <div class="content3">
     
-    <script src="flip.js"></script>
-</body>
+          <div class="cont3">
+             <img src="shoes.png">
+             <p>Men Casual Shoes</p>
+             <p style="color: green;">Min. 70% Off</p>
+          </div>
+
+          <div class="cont3">
+             <img src="tshirts.png">
+              <p>Men's T-shirts</p>
+              <p style="color: green;">Special 0ffer</p>
+           </div>
+            <br>
+            <div class="cont3">
+              <img src="sport_shoes.png">
+             <p>Mean's Sports Shoes</p>
+              <p style="color: green;">Min, 50% Off</p>
+           </div>
+
+           <div class="cont3">
+              <img src="salwaar.png">
+              <p>women's Ethnic Sets</p>
+              <p style="color: green;">Min, 50% Off</p>
+           </div>
+         </div>
+     </section>
+
+     <section>
+         <p class="head3">Home Decor & Furnishings</p>
+         <br> 
+       <div class="content3">
+           <div class="cont3">
+             <img src="shoes.png">
+             <p style="color: green;">Min. 50% Off</p>
+           </div>
+
+           <div class="cont3">
+             <img src="tshirts.png">
+              <p>Plant Seeds</p>
+              <p style="color: green;">Min. 50% Off</p>
+           </div>
+           <br>
+          <div class="cont3">
+              <img src="sport_shoes.png">
+             <p>Torches</p>
+             <p style="color: green;">Min, 50% Off</p>
+           </div>
+
+           <div class="cont3">
+              <img src="salwaar.png">
+              <p>Plants Slapings</p>
+              <p style="color: green;">Min, 50% Off</p>
+           </div>
+        </div>
+    </section>
+      <div class="ads2">
+         <img src="ad-2.png">
+        
+      </div>
+    </content>
+      <div class="foot1">
+      <h6>
+
+         
+      </h6>
+
+
+
+      </div>
+
+    
+     <script src="flip.js"></script>
+ </body>
 </html>
